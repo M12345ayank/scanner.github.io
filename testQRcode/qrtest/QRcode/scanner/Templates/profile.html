@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+<body>
+    <p>Helo</p>
+{% for item in all %}
+<p>
+{{ item.vehicle }}</p>
+<p>{{item.password}}</p>
+{% endfor %}
+<form method="POST">
+  {% csrf_token %}
+  <input type="textbox" name="data" value="mayank">
+  <button class="btn btn-primary" type="submit">Share QR Code</button>
+</form>
+</body>
+</html>   
